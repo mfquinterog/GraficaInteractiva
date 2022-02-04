@@ -1,0 +1,811 @@
+a{ /* estilos para la etiqueta a */
+	color: #5F9EA0;
+	text-decoration:none; /* para que no subraye los vínculos */ 
+}
+a:hover {    /* hover es el estilo cuando el cursor está sobre un  elemento de a */ 
+	color: #2F4F4F;
+}
+
+
+.menunav {    /* cuando lleva un punto antes, el estilo aplica sobre etiquetas marcadas como menu de navegacion*/ 
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden; /*La propiedad overflow hidden recorta el contenido y no muestra barras de posición*/
+    align: center;
+    background-color: #333;
+    position: -webkit-sticky; /* Para que la barra de navegacion se desplace a medida que se baja en la paginaSafari */
+    position: sticky;
+    padding:5px 100px 6px 400px;  /* arriba, derecha, abajo, izquierda */ /*padding crea un espacio extra dentro de los margenes*/
+    top: 0;
+    z-index: 99; /*Para que aparezca en la capa 99 encima de la capa 1*/
+  }
+  .botonMenu {      /* estilo para cada botón del menu de navegación */ 
+	font-family: Ancizar Sans-regular;  
+	font-size: 14px;
+	font-style: normal;
+	display: block; /*Se genera un elemento de cuadro de bloque*/
+	font-weight: normal; /*letra normal sin negrilla*/
+	color: #E0FFFF;
+	text-align: center; /*texto alineado en el centro del cuadro*/
+	width: 142px; /*ancho*/
+	padding:5px 20px 6px 20px;  /* arriba, derecha, abajo, izquierda */
+	float: left; /*el elemento es un flotante posicionado al lado izquierdo de la pantalla*/
+	cursor: pointer; /*para que el puntero se vuelva una mano al ubicarlo sobre la barra d emenu*/
+  transition: transform; /* transición exclusiva para las transformaciones */
+  transition-duration: 500ms; /* duración de la animación 0.5 segundos */ 
+}
+.botonMenu:link {
+	color: #FAF0E6;
+	text-decoration: none;	/* para que no subraye los vínculos */ 
+	cursor: pointer;
+}
+.botonMenu:hover {
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	cursor:pointer;
+  text-decoration: underline; /* para que cuando pase el cursor sobre el boton se subraye*/ 
+  transform: scale(120%); /*Se agranda al 120% cuando se pasa el cursor por encima*/
+}   
+
+h1{     /* estilo para los titulares mas grandes */ 
+    font-family: Arial, Helvetica, sans-serif; /* la fuente se asigna según disponibilidad */
+    color:  #191970;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    max-width: 1000px; /* ancho máximo del párrafo */
+    margin:auto;          /* margen igual a izquierda y derecha */ 
+	margin-top: 10px;
+    margin-bottom:10px;
+    transition: all; /* se aplican transiciones para cualquier cambio, dando un efecto de animación */ 
+    transition-duration: 500ms; /* duración de la animación 0.5 segundos */ 
+}
+
+h1:hover {
+    color: #5d5d79;
+}
+
+
+h2 {
+	font-family: Ancizar Sans-regular;  
+	color: #F5FFFA; /*mint creamm*/
+	font-size: 50px;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+	text-align: left; /*texto alineado a la izquierda*/
+	max-width: 640px;
+	margin:auto; /* letrero centrado*/
+	padding:80px 0px 2px 0px;  /* arriba, derecha, abajo, izquierda */
+    grid-column-start: 1; /*ubicado en la primera columna*/
+    grid-column-end: 2;
+
+}
+.unoa {
+	max-width:2000px; /*ancho maximo*/
+	margin-top: 100px;
+	margin-left:100px;  
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+	padding:1rem 2rem 1rem 1rem;  /* arriba, derecha, abajo, izquierda */
+	background-color: rgba(219, 211, 211, 0.2);
+}
+.unoa2 {
+    position: absolute;
+    right: 27%; /*27% a la derecha*/
+	bottom: 0;  /* margen igual a izquierda y derecha */
+    width: 400px; /*ancho fijo*/
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+}
+
+
+
+.unoa3 {
+	position: absolute;
+	max-width: 200px;
+	margin-bottom: 100px;
+	margin-left:10px;  /* margen igual a izquierda y derecha */
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+    grid-row: 2/2; /*segunda fila*/
+}
+
+
+
+body{  /* los estilos aplicados valen para todos los body's*/        
+    display: grid; /* Dividir en grillas*/  
+    grid-template-rows: auto auto;  /* 2 filas*/  
+    background-color: #D3D3D3;   /* color de fondo*/                
+	background-image: url(imagenes/light.jpeg);  /* imagen de fondo*/        
+	background-repeat: repeat; /* La imagen de background se repite hasta llenar todo el espacio*/
+}
+
+
+.container { /*Contenedor para la imagen y el overlay*/
+
+	margin-top: 100px;
+	margin-left: auto; /*centrado*/
+	margin-right: auto; /*centrado*/
+    display: grid;
+    grid-template-columns: auto 50% auto; /*tre columnas, columna centra ocupa 50% del espacio las otras dos el 25%*/
+  }
+  
+.image {
+  display: block;
+  width: 100%;
+  height: auto; /*generada automaticamente segun el tamaño del ancho, margenes, etc*/
+}
+
+.overlay { /*cobertura de la imagen*/
+  position: absolute;
+  top: 0px; /*Distancia respecto al top del contenedor*/
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease; /*tiempo que se tarda en aparecer la transicion*/
+  background-color:  	#404040; /*Color de la cobertura de la imagen*/
+}
+
+.container:hover .overlay {
+  opacity: 1; /*opaca completamente cuando el mouse se pone sobre en contenedor, de modo que solo se ve el overlay*/
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);/*para ubicar el texto en */
+}
+
+.cuerpo1{
+    display: grid;
+    grid-template-rows: auto auto; /* 2 filas*/
+}
+
+.uno {
+	position: relative; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
+	max-width:787px;
+	top: 0px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: Ancizar Sans-regular;  
+	font-size: 15px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+}
+
+.copyuno {
+	position: relative; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
+	width:787px;
+	top: 0px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+}
+
+.uno1{
+    display: grid;
+    grid-template-columns: 70% 30%; /*primera columna del 70% segunda columna del 30%*/
+}
+
+
+.unaN{
+	position: relative;
+    display: grid;
+    grid-template-columns: auto 20%; /*segunda columna del 20%*/
+}
+
+
+.unaim1{
+    grid-row-start: 2; /*ubicado en la segunda fila*/
+    grid-row-end: 2;
+    grid-column: 1/2; /*ubicado en la primera columna*/
+    position: relative;
+}
+
+.centro { /*Contenedor para la imagen y el overlay*/
+    position: relative;
+	margin-top: 100px;
+	margin-left: auto; /*centrado*/
+	margin-right: auto; /*centrado*/
+	width: 100%;
+  }
+ .tres {
+	position: relative;
+	float: left; /*caja flotante a la izquierda d ela pantalla*/
+	margin-right: 50px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+} 
+
+.copytres {
+	position: relative;
+	float: left;
+	margin-right: 30px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	color:#FFFFFF;
+} 
+
+.copytresb {
+	position: relative;
+	float: left;
+	margin-right: 190px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	color:#FFFFFF;
+} 
+
+.cuatro {
+	display: grid;
+    grid-template-columns: auto 30%; /*2 columnas, la 2da del 30%*/
+	margin-right: auto;/*Para centrar el elemento*/
+	margin-left: auto;/*Para centrar el elemento*/
+	font-size: 10px;
+	color:#FFFFFF;
+}
+
+
+.cinco {
+	position: relative;
+	float: right;/*elemennto posicionado en la parte derecha del documento*/
+	margin-left: 50px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: right; /*texto alineado hacia la derecha de la caja*/
+	color:#FFFFFF;
+	padding: 0px px 0px 50px;  /* arriba, derecha, abajo, izquierda */
+}
+
+.copycinco {
+	position: relative;
+	float: right;/*elemennto posicionado en la parte derecha del documento*/
+	margin-left: 0px;
+	margin-right: 250px;
+	margin-bottom: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: right; /*texto alineado hacia la derecha de la caja*/
+	color:#FFFFFF;
+	padding: 0px px 0px 50px;  /* arriba, derecha, abajo, izquierda */
+}
+
+.seis {
+    max-width:1000px; /*Tamaño máximo de la caja*/
+    top: 0px;
+    margin:auto;  /* margen igual a izquierda y derecha */
+    font-family: Ancizar Sans-regular;  
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    color:#FFFFFF;
+    text-shadow: 1px 1px #000000;
+    display: flex; /*division elastica*/
+    justify-content: stretch; /*distribucion uniforme de los tags a lo largo de la seccion*/
+    }
+
+	.seis > img { /*esta regla se aplica para las imagenes que esten dentro de cualquier etiqueta con
+		clase "Seis"*/
+		transition: all; /*se aplican animaciones a cualquier cambio*/
+		transition-duration: 500ms; /*duración de la animación de 0.5 segundos*/
+	}
+	
+	.seis > img:hover { /*esta regla se aplica para la imagene donde el cursos este encima
+		que esten dentro de cualquier etiqueta con clase "Seis"*/
+		transform: scale(110%);/*distribucion uniforme de los tags a lo largo de la seccion*/
+		margin-bottom: 40px;
+	}
+	.seis > img:hover::after { /*esta regla se aplica para el elemento siguiente a la imagen
+		donde el cursor este encima. Que este dentro de cualquier etiqueta con clase "Seis"*/
+		transform: scale(100%); /*distribucion uniforme de los tags a lo largo de la seccion*/
+	}
+	.seis > img:hover::before { /*esta regla se aplica para el elemento anterior a la imagen
+		donde el cursor este encima. Que este dentro de cualquier etiqueta con clase "Seis"*/
+		transform: scale(100%); /*distribucion uniforme de los tags a lo largo de la seccion*/
+	}
+
+.siete {
+    position: absolute;
+	width: 800;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+    right: 5%;
+    bottom: 12%;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+}
+
+.textouno {
+	position: relative; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
+	max-width:787px;
+	margin-top: 45%; /* margen arriba del 45%  */
+	margin-left: 5%;  /* margen a izquierda del 5%  */
+	font-family: Ancizar Sans-regular;  
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+}
+
+.sieteb {
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-left: 5%;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+}
+
+.ocho {
+	position: relative; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
+	max-width:787px;
+	top: 0px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:#FFFFFF;
+	background-color: rgba(20, 18, 18, 0.8);
+	box-shadow: 1em 1em 1em 1em  rgba(20, 18, 18, 0.2);
+}
+.copyright{
+	position: relative;
+	margin-right: auto; /*se acomoda segun la ibicacion de los elementos*/
+	margin-left: 40%;
+	margin-top: 5px;
+	padding: 0% 30% 0% 0%;  /* arriba, derecha, abajo, izquierda */
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+	color:#FFFFFF;
+}
+.copyrightb{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 16px;
+	padding: 0% 30% 0% 30%;  /* arriba, derecha, abajo, izquierda */
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	color:#FFFFFF;
+}
+.autor {
+	position: absolute; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
+	float: bottom; /*caja flotante en el fondo de la pantalla*/
+	max-width:1500px;
+	top: 1600px;
+	left:auto;  /* margen igual a izquierda y derecha */
+	right: auto;
+	font-family: Ancizar Sans-regular;  
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify; /*texto justificado*/
+	color:purple;
+	text-shadow: 1px 1px #000000; /*sombras para el bloque o division*/
+	background-color: rgba(158, 158, 158, 0.342);
+}
+
+
+.imp2 {
+	margin-left: 40%;/*Para centrar el elemento*/
+	font-size: 10px;
+	color:#FFFFFF;
+}
+
+/* elementos del menu desplegable*/
+#btn-menu {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+} 
+
+.etiqueta1 {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px; /*ancho de la caja*/
+    height: 30px; /*alto de la caja*/
+    left: 20px; /*a 20 pixeles de la izquierda*/
+    top: 35px; /*a 20 pixeles de arriba*/
+	position: absolute;
+} 
+.etiqueta1:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+
+
+/*cuando la pantalla mida menos de 1300px*/
+@media only screen and (max-width: 1300px) {
+
+
+	.cuerpo1{
+		display: grid;
+		grid-template-rows: 70% auto; /*2 filas la primera del 70% la segunda sae acomoda*/
+	}
+
+	h1{     /* estilo para los titulares mas grandes */ 
+		font-size: 80px;
+	}
+	h2 {
+
+		font-size: 35px;
+		max-width: 540px;
+		padding:0px 0px 2px 0px;  /* arriba, derecha, abajo, izquierda */
+	
+	}
+
+	.uno1{
+		grid-template-columns: 1fr ; /*una sola columna*/
+		grid-auto-rows: 50% 50%; /*2 filas de igual tamaño (50%)*/
+	}
+	
+
+
+	.unaN{
+		grid-template-columns: auto 40%; /*2 columnas, la segunda columna del 40%*/
+	}
+	
+	.uno1{
+		grid-template-columns: 1fr ;
+		grid-auto-rows: 50% 50%;
+	}
+
+	.unaim1{
+		margin-top: 300px;
+		margin-left: 5%;
+	}
+
+
+	.unoa2 {
+		right: 28%;
+		top: 55%;  /* margen arriba */
+	}
+
+	.siete{
+		width: 520px;
+	}
+	.textouno {
+		margin-left: 15%;
+		margin-top: 100px;
+		margin-bottom: 2px;
+	}
+	.sieteb {
+		width: 400px;
+		margin-left: 15%;
+		margin-top: 2px;
+	}
+	.unoa3 {
+		margin-top: 50px;
+	}
+	
+	.unoa {
+		margin-top: 100px;
+		margin-left: 5%; 
+	}
+
+	.cuatro{
+		margin-left: opx;
+	}
+	.imp2{
+		margin-left: 20%;
+	}
+	.copyright{
+		margin-left: 18%;
+	}
+	.container { /*Contenedor para la imagen y el overlay*/
+
+		grid-template-columns: auto 70% auto; /* 3 columnas la de la mitad del 70%*/
+	  }
+
+	  .seis{
+		  max-width: 1000px;
+		  max-height: 300px;
+	  }
+
+	  .cinco{
+		  max-width: 300px;
+	  }
+}
+
+/*Cuando la pantalla mida menos de 860pixeles*/
+@media only screen and (max-width: 860px) {
+
+	.menunav {
+        background: rgba(0.5, 0.5, 0.5, 0.2); /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 10%; /* se refiere al ancho del fondo del menu*/
+        margin-left: -115%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+		padding:5px 100px 6px 0px;  /* arriba, derecha, abajo, izquierda */ /*padding crea un espacio extra dentro de los margenes*/
+		transition: all 2s;   /* la animación de desplegar el menu dura 2 segundos*/
+    } 
+
+	.menunav ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+
+
+	.etiqueta1 {
+        display: block; /* se muestra el simbolo de menu cuando se reduce la ventana*/
+	}
+
+	#btn-menu:checked ~ .menunav {  /* el simbolo demenu controla las dos posiciones del menu */
+        margin: 1px; 
+	}
+	
+
+
+	h1{    
+		font-size: 50px;
+	}
+	
+	h2{
+		font-size: 25px;
+	}
+	.text {
+		font-size: 12px;
+	  }
+
+	  .siete {
+		right: 10%;
+		width: 400px;
+		margin-bottom: 10%;
+	}
+
+	.unoa3{
+		margin-top: 15%;
+		font-size: 15px;
+	}
+
+	.unoa2 {
+		font-size: 10px;
+		right: 5%;
+		top: 0%; 
+	}
+	.unoa{
+		font-size: 15px;
+	}
+
+	.imp2{
+		margin-left: 10%;
+		width: 400px;
+	}
+	.copyright{
+		margin-left: 8%;
+	}
+	.uno {
+		max-width:600px;
+		max-height: 400px;
+		margin-left:30px;  
+		margin-right: 10px;
+		font-size: 12px;
+	}
+
+	.tres {
+		margin-right: 20px;
+		margin-top: 20px;
+		font-size: 10px;
+		max-height: 300px;
+		max-width: 450px;
+	} 
+
+	.copyuno {
+		font-size: 10px;
+		margin-left: 30px;
+		max-width: 500px;
+	}
+
+	.copyrightb{
+		font-size: 10px;
+		max-width: 400px;
+		padding: 0% 10% 0% 10%;
+	
+	}
+	.ocho{
+		font-size: 12px;
+		max-width:600px;
+		margin-left: 30px;
+	}
+
+	.autor{
+		font-size: 16px;
+	}
+	.cuatro{
+		max-width: 500px;
+		max-height: 300px;
+		margin-top: 20px;
+	}
+	.cinco{
+		max-height: 300px;
+		max-width: 300px;
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.seis{
+		max-width: 790px;
+	}
+	.copycinco{
+		margin-right: 225px;
+		padding: 0px 0px 0px 0px
+	}
+	.copytresb{
+		margin-right: 140px;
+	}
+	.copytres{
+		margin-right: 5px;
+	}
+}
+	/* cuando la ventana mida menos de 640px */
+@media only screen and (max-width: 770px) {
+ 
+
+	.unaN{
+    grid-template-columns: auto; /*una sola columna*/
+	grid-auto-rows: auto auto; /*2 filas*/
+	}
+
+	.unaim1{
+		margin-top: 30%;
+		margin-right: 10%;
+	}
+	.siete {
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+		margin-top: 0%;
+	}
+	.unoa3{
+		right: 20%;
+		top: 70%;
+		max-width: 400px;
+	}
+
+	.unoa{
+		margin-top: 30%;
+	}
+
+	.cuatro{
+		max-width: 400px;
+		max-height: 250px;
+		right: 15%;
+	}
+	.tres{
+		max-width: 350px;
+		max-height: 250px;
+	}
+	.cinco
+	{
+		max-width: 160px;
+	}
+
+	.seis{
+		max-width: 600px;
+	}
+
+	.ocho{
+		margin-top: 10%;
+	}
+
+	.copycinco{
+		margin-right: 100px;
+	}
+	.copytresb{
+		margin-right: 110px;
+	}
+	.copytres{
+		margin-right: 30px;
+	}
+}
+
+
+
+
+
+*Estilo para el div en el que está contenido el mapa interactivo*/
+.mapaint{
+	position:relative; 
+	font-size:1.15em;
+	color:#000000;
+	background-color:#DDDDDD;
+	border: 3px solid #AAAAAA;
+	box-shadow:2px 2px 5px black;
+	width: 90%;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	display:block;
+}
+/*Estilo para la imagen del mapa interactivo*/
+.mapa {
+	width: 68%; /* gradua tamaño de la imagen*/
+	display: block;
+	margin: auto;
+}
+
+/*Estilos para cada uno de los puntos en el mapa interactivo*/
+.punto1 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:-26%;
+	left:41.5%;
+}
+.punto2 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:5%;
+	left:74.5%;
+}
+.punto3 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:20%;
+	left:41%;
+}
+.punto4 {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:-55%;
+	left:50%;
+}
+
+/*Estilo para los párrafos*/
+.inf {
+	font-size:1.2em;
+	color:#000000;
+	background-color:#DDDDDD;
+	width: 90%;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 1%;
+	border: 1px solid #FFFFFF;
+	box-shadow:1px 1px 4px black;}
+/*Estilo para la imagen en el párrafo de información sobre el mapa interactivo*/
+.imgM {
+	max-width: 5%;
+	float:right;
+	margin:1%;
+	border: 1px solid #FFFFFF;
+	box-shadow:1px 1px 4px black;
+}

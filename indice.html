@@ -1,0 +1,41 @@
+<!doctype html>
+<!--en todos los documentos se vuelve a colocar el titulo y la barra de navegacion igual que en la pagina de indice-->
+<html>
+<head>
+<meta charset="UTF-8"> <!-- la codificación UTF-8 para utilizar tildes y ñ en el contenido-->
+<meta lang="es"> <!-- definimos idioma español-->
+<title>Chorro de Quevedo</title> <!--titulo de la pestaña-->
+<link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+</head>
+
+<body> <!-- en body empieza el documento-->
+  <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
+  <label class="etiqueta1" for="btn-menu"><img src="imagenes/menu.png" width="30px"></label><!-- la imagen del ícono se muestra como label del icono de menu y se oculta cuando no se necesita -->
+  <a href="indice.html" target="_self"><h1>Chorro de Quevedo</h1></a><!-- Titulo de la pagina h1 es el titular más grande h1 despues de la etiqueta a para que priorice el estilo de h1, la etiqueta a es para poner un vinculo que conduzca a la pagina entre comillas y con el target self para indicar que el vinculo no es externo-->
+  <nav class="menunav">  <!-- asigna el estilo "menunav" del archivo .css a la barra de menu creada con la etiqueta ul que se usa para crear una caja en bloque para listas -->
+      
+       <a class="botonMenu" href="puno.html" target="_self"> ¿Dónde ir? </a><!-- asigna el estilo "botonMenu" del archivo .css a cada botón -->
+       <a class="botonMenu" href="pdos.html" target="_self"> ¿Quienes lo habitan?</a>
+       <a class="botonMenu" href="ptres.html" target="_self"> ¿Qué se puede hacer?</a>
+       <a class="botonMenu" href="pcuatro.html" target="_self"> Historia</a>
+       <a class="botonMenu" href="pseis.html" target="_self">Mapa interactivo</a>
+       <a class="botonMenu" href="pcinco.html" target="_self"> Creditos</a>   
+      </nav>  
+    
+<div>
+  <div class="container"> <!--La etiqueta div para crear una division en el documento con las caracteristicas del estilo container-->
+    <div></div>
+    <div class="centro"> <!--Se crea una division con el estilo "centro"-->
+     <img class="image" src="imagenes/chorro.jpg" alt="Calle del embudo cerca al Chorro de quevedo" > <!--etiqueta alt muestra el texto que esta entre comillas cuando hay un error con la imagen-->
+       <div class="overlay"> <!-- se crea una division para poner la tarjeta que se mostrara cuando el mouse se ponga sobre la imagen-->
+         <div class="text">&copy;Nota. Adaptado de Una noche en la plaza donde nació Bogotá [Fotografía], por Cristian Garavito, 2016, El Espectador (<a href = "https://www.elespectador.com/bogota/una-noche-en-la-plaza-donde-nacio-bogota-article-647515/" target = "blank"> https://www.elespectador.com/bogota/una-noche-en-la-plaza-donde-nacio-bogota-article-647515/)<a><!--el target blank indica que el vinculo es externo-->}
+         </div> 
+       </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
+
+

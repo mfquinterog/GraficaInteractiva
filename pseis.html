@@ -1,0 +1,45 @@
+<!doctype html>
+<!--en todos los documentos se vuelve a colocar el titulo y la barra de navegacion igual que en la pagina de indice-->
+<html>
+<head>
+<meta charset="UTF-8">  <!-- la codificación UTF-8 para utilizar tildes y ñ en el contenido-->
+<meta lang="es"><!-- definimos idioma español-->
+<title>Chorro de Quevedo</title> <!--titulo de la pestaña-->
+<link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
+<script src="pseis.js"></script>
+<meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+</head>
+
+<body>
+    <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
+    <label class="etiqueta1" for="btn-menu"><img src="imagenes/menu.png" width="30px"></label><!-- la imagen del ícono se muestra como label del icono de menu y se oculta cuando no se necesita -->
+    <a href="indice.html" target="_self"><h1>Chorro de Quevedo</h1></a>
+    <nav class="menunav"> 
+        
+         <a class="botonMenu" href="puno.html" target="_self"> ¿Dónde ir? </a><!-- asigna el estilo "botonMenu" del archivo .css a cada botón -->
+         <a class="botonMenu" href="pdos.html" target="_self"> ¿Quienes lo habitan?</a>
+         <a class="botonMenu" href="ptres.html" target="_self"> ¿Qué se puede hacer?</a>
+         <a class="botonMenu" href="pcuatro.html" target="_self"> Historia</a>
+         <a class="botonMenu" href="pseis.html" target="_self">Mapa interactivo</a>
+         <a class="botonMenu" href="pcinco.html" target="_self"> Creditos</a>   
+        </nav>  
+    
+
+    
+                <h2>Mapa interactivo</h2> <!-- h2 es el segundo titular mas grande-->
+                <div class="mapaint">
+                    <!--Imagen del mapa interactivo-->
+                    <img class="mapa" src="imagenes/mapa2.png" alt="Mapa Chorro de Quevedo">
+                    <!--Imagen de los botones-->
+                    <a href="#Info" target="_self"><img class="punto1" onclick="Punto1()" src="imagenes/li.png" alt="Plaza Chorro de Quevedo"></a>
+                    <a href="#Info" target="_self"><img class="punto2" onclick="Punto2()" src="imagenes/li.png" alt="La Bendita Chicheria"></a>
+                    <a href="#Info" target="_self"><img class="punto3" onclick="Punto3()" src="imagenes/li.png" alt="Callejon del embudo"></a>
+                    <a href="#Info" target="_self"><img class="punto4" onclick="Punto4()" src="imagenes/li.png" alt="El gato gris"></a>
+                </div>
+                <div class="mapaint">
+                <!--Párrafo con información sobre el lugar seleccionado del mapa interactivo. Cambia su contenido (imagen y texto) al interactuar con el mapa para brindar mayor información-->
+                <p class="inf" id="Info"><img class="imgM" src="imagenes/info.png" alt="Punto"><br><br>
+                Mapa interactivo<br>Haz clic en alguno de los circulos morados para ver más información acerca el lugar.</p>
+                </div>   
+</body>
+</html>
