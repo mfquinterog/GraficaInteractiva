@@ -838,16 +838,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-.p-tres > .contenido-uno > section {
+.p-tres > .contenido-uno > div > section {
   display: flex;
+  flex-direction: row;
+  margin: -1em;
+  padding: 0.2em 2em;
 }
-.p-tres > .contenido-uno > section > .portait {
+.p-tres > .contenido-uno > div > section > .portait {
   width: 50%;
 }
-.p-tres > .contenido-uno > section > .cabecera {
+.cabecera {
   width: 100%;
 }
-.p-tres > .contenido-uno > section > .contenido-cuepo-1 {
+.contenido-cuepo-1 {
   width: 50%;
 }
 /*Estilo para el párrafo de información del parrafo del contenido 1*/

@@ -49,3 +49,7 @@ function showActivity4() {
     showNmb.classList.remove("hidden");
   }
 }
+
+function showAnimationBubbles(element) {
+  console.log(element);
+}
