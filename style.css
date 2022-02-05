@@ -762,28 +762,28 @@ body {
   position: absolute;
   z-index: 2;
   width: 4%;
-  bottom: -26%;
+  bottom: 37.5%;
   left: 41.5%;
 }
 .punto2 {
   position: absolute;
   z-index: 2;
   width: 4%;
-  bottom: 5%;
-  left: 74.5%;
+  bottom: 58%;
+  left: 74%;
 }
 .punto3 {
   position: absolute;
   z-index: 2;
   width: 4%;
-  bottom: 25%;
+  bottom: 71%;
   left: 41%;
 }
 .punto4 {
   position: absolute;
   z-index: 2;
   width: 4%;
-  bottom: -55%;
+  bottom: 18.5%;
   left: 50%;
 }
 
@@ -838,19 +838,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-.p-tres > .contenido-uno > div > section {
+.p-tres > .contenido-uno > section {
   display: flex;
-  flex-direction: row;
-  margin: -1em;
-  padding: 0.2em 2em;
 }
-.p-tres > .contenido-uno > div > section > .portait {
+.p-tres > .contenido-uno > section > .portait {
   width: 50%;
 }
-.cabecera {
+.p-tres > .contenido-uno > section > .cabecera {
   width: 100%;
 }
-.contenido-cuepo-1 {
+.p-tres > .contenido-uno > section > .contenido-cuepo-1 {
   width: 50%;
 }
 /*Estilo para el párrafo de información del parrafo del contenido 1*/
