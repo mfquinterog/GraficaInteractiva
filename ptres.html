@@ -8,6 +8,10 @@
 <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
 <script src="ptres.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body><a name="indice"></a>
@@ -26,14 +30,19 @@
         <h2 class="title-p-tres">¿Qué se puede hacer?</h2>
          
 <main class="p-tres">
-    <div class="contenido-uno" id="contenido-uno" onclick="showActivity1()">
+    <div class="contenido-uno" id="contenido-uno" onclick="showActivity1()" onmouseover="showAnimationBubbles(this)">
         <h4>Actividad 1</h4>
-    
+        <h1 class="animate__animated animate__bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              </svg>
+        </h1>
+
         <div class="hidden">
-            <section>
-                <p class="uno cabecera">La plaza del chorro de Quevedo ha sido durante años un centro de encuentros para personas de todas las edades, pues es uno de los atractivos urbanos de la ciudad ya que se encuentra en uno de los barrios mas tradicionales de Bogotá.
+            <p class="uno cabecera">La plaza del chorro de Quevedo ha sido durante años un centro de encuentros para personas de todas las edades, pues es uno de los atractivos urbanos de la ciudad ya que se encuentra en uno de los barrios mas tradicionales de Bogotá.
                 La llamada calle del embudo es una de las vías por las cuales se puede acceder a la plazoleta, se trata de una calle muy vieja,  estrecha y empedrada, que en la actualidad esta destinada unicamente al paso de los peatones. Este es el escenario que algunos de los artistas urbanos ocupan para plasmar su arte en murales o grafitis.
-                </p>
+            </p>
+            <section>
                 <div class="portait">
                     <img class="tres" src="imagenes/jovenes.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/>
                     <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span>
@@ -46,11 +55,11 @@
     <div class="contenido-dos" id="contenido-dos" onclick="showActivity2()">
         <h4>Actividad 2</h4>
         <div class="hidden">
-            <div class="portait">
+            <div class="">
                 <img class="tres" src="imagenes/chicha.jpeg" width="500px" heigth="500px" alt="Chicha que se vende en la calle del embudo"/>
                 <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span>
             </div>
-        <p>La bebida característica y emblemática del Chorro de Quevedo y sus alrededores es la chicha, es un trago de maiz fermentado que existe desde hace más de 9000 años en la región. La ofrecen de sabores y colores diferentes, el precio también varia según el establecimiento, además se puede encontrar en vaso o totuma si se desea vivir la experiencia completa.</p>
+            <p>La bebida característica y emblemática del Chorro de Quevedo y sus alrededores es la chicha, es un trago de maiz fermentado que existe desde hace más de 9000 años en la región. La ofrecen de sabores y colores diferentes, el precio también varia según el establecimiento, además se puede encontrar en vaso o totuma si se desea vivir la experiencia completa.</p>
         </div>
     </div>
     
