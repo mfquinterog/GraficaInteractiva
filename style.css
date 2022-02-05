@@ -813,7 +813,7 @@ body {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(600px, 1fr)
+    minmax(700px, 1fr)
   ); /*Ajuste automatico*/
 }
 .p-tres > div {
