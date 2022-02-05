@@ -412,7 +412,7 @@ body{  /* los estilos aplicados valen para todos los body's*/
 	position: absolute; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
 	float: bottom; /*caja flotante en el fondo de la pantalla*/
 	max-width:1500px;
-	top: 1600px;
+	top: 1900px;
 	left:auto;  /* margen igual a izquierda y derecha */
 	right: auto;
 	font-family: Ancizar Sans-regular;  
@@ -808,4 +808,10 @@ body{  /* los estilos aplicados valen para todos los body's*/
 	margin:1%;
 	border: 1px solid #FFFFFF;
 	box-shadow:1px 1px 4px black;
+}
+.prop {
+	font-family: Ancizar Sans-regular;  
+	color: #F5FFFA; /*mint creamm*/
+	font-size: 24px;
+
 }
