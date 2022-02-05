@@ -422,7 +422,7 @@ body {
   position: absolute; /*posicionado respecto al documento y luego respecto a si mismo con los valores de top, bottom, etc*/
   float: bottom; /*caja flotante en el fondo de la pantalla*/
   max-width: 1500px;
-  top: 1600px;
+  top: 1900px;
   left: auto; /* margen igual a izquierda y derecha */
   right: auto;
   font-family: Ancizar Sans-regular;
@@ -776,7 +776,7 @@ body {
   position: absolute;
   z-index: 2;
   width: 4%;
-  bottom: 20%;
+  bottom: 25%;
   left: 41%;
 }
 .punto4 {
@@ -925,4 +925,10 @@ html {
 
 .hidden {
   display: none;
+}
+
+.prop {
+  font-family: Ancizar Sans-regular;
+  color: #f5fffa; /*mint creamm*/
+  font-size: 24px;
 }
