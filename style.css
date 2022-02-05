@@ -915,6 +915,7 @@ especificamente el primer título*/
   max-width: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 /*Estilo para el párrafo de información del título de cada contendio de la página tres*/
@@ -972,4 +973,17 @@ i {
     transform: translate(-20px, 440px);
     display: none;
   }
+}
+
+.ctn-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.portrait-2 {
+  width: 50%;
+}
+.pctn-2 {
+  width: 50%;
+  margin-left: 7em;
 }
