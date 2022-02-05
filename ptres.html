@@ -7,6 +7,7 @@
 <title>Chorro de Quevedo</title> <!--titulo de la pestaña-->
 <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+<script src="ptres.js"></script>
 </head>
 
 <body><a name="indice"></a>
@@ -22,56 +23,71 @@
          <a class="botonMenu" href="pseis.html" target="_self">Mapa interactivo</a>
          <a class="botonMenu" href="pcinco.html" target="_self"> Creditos</a>   
         </nav>  
+        <h2 class="title-p-tres">¿Qué se puede hacer?</h2>
          
-<h2>¿Qué se puede hacer?</h2>
-<br>
-<br>
-<p class="uno">La plaza del chorro de Quevedo ha sido durante años un centro de encuentros para personas de todas las edades, pues es uno de los atractivos urbanos de la ciudad ya que se encuentra en uno de los barrios mas tradicionales de Bogotá. 
-La llamada calle del embudo es una de las vías por las cuales se puede acceder a la plazoleta, se trata de una calle muy vieja,  estrecha y empedrada, que en la actualidad esta destinada unicamente al paso de los peatones. Este es el escenario que algunos de los artistas urbanos ocupan para plasmar su arte en murales o grafitis.
-<br>
-<br>
-<br>
-</p>
-<div class="uno"><img class="tres" src="imagenes/jovenes.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/> 
-Sobre esta calle hay diferentes establecimientos que en su mayoría ofrecen una experiencia gastronómica como lo son los bares, cafeterias, restaurantes que allí se encuentran en la zona. En estos lugares se puede desde degustar un buen café hasta pasar una tarde acompañado de amigos y con cervezas y musica rock de fondo. pues allí se ubican espacios con todo tipo de ambientaciones para todo tipo de gustos.
-</div>
-
-<p class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </p>
-<br>
-<br>
-<br>
-<div class="uno"><img class="tres" src="imagenes/chicha.jpeg" width="500px" heigth="500px" alt="Chicha que se vende en la calle del embudo"/> 
-La bebida característica y emblemática del Chorro de Quevedo y sus alrededores es la chicha, es un trago de maiz fermentado que existe desde hace más de 9000 años en la región. La ofrecen de sabores y colores diferentes, el precio también varia según el establecimiento, además se puede encontrar en vaso o totuma si se desea vivir la experiencia completa.
-
-</div>
-
-<p class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </p>
-<br>
-<br>
-<br>
-<br>
-
-<p class="uno">
- Otra de las actividades que se llevan a cabo en la zona es la cuentería, actividad que se ha realizado durante años en el centro de la plazoleta.</p>
-
-
-<p class="cuatro"><!-- asigna el estilo "uno" al párrafo de texto --><img class="cuatro" src="imagenes/cuenteros.jpg" width="400px" heigth="400px" alt="Cuenteros en la plazoleta Chorro de Quevedo"/> </p>
-<p class="copyrightb"> &copy; Fotografía de Álvaro Cardona | SOHO.</p>
-
-
-<p class="ocho"> Aquí las anecdotas, cuentos e incluso chistes se toman el escenario, son muchos los cuenteros que narran sus historias con monologos preparados en la Plazoleta, las personas se reunen entorno a ellos y al final de cada presentación se recoge entre todo el público un aporte voluntario pues este es la forma de sustento de estas personas.
-<br>
-Son estas y muchas otras actividades como las presentaciones musicales, acrobacias o malabares toman lugar en este espacio, lo que hace a este un punto tan turistico de la ciudad.
-</p>
-<br>
-<br>
-<br>
-
-    <div class="uno"><img class="tres" src="imagenes/labenditachicheria.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/> 
-        Frente a la plaza del chorro de quevedo en la carrera primera con calle 12B bis, se encuentra La Bendita Chicheria, se trata de una tienda que también funciona como museo, en este lugar se encuentra todo tipo de objetos y fotografias que hacen referencia a los aspectos tradicionales de la cultura de Bogotá. Dentro del lugar se lleva a cabo un recorrido que tiene una duración de cuarenta minutos, en el que se habla del origen y la preparación de la chicha.
-        <br>
-        Su fundador, Alfredo Ortiz tenía como objetivo el recuperar y revivir las costumbres ancestrales, por lo que además del recorrido historico se hace un llamado de atención a nustra cultura olvidada.
+<main class="p-tres">
+    <div class="contenido-uno" id="contenido-uno" onclick="showActivity1()">
+        <h4>Actividad 1</h4>
+    
+        <div class="hidden">
+            <section>
+                <p class="uno cabecera">La plaza del chorro de Quevedo ha sido durante años un centro de encuentros para personas de todas las edades, pues es uno de los atractivos urbanos de la ciudad ya que se encuentra en uno de los barrios mas tradicionales de Bogotá.
+                La llamada calle del embudo es una de las vías por las cuales se puede acceder a la plazoleta, se trata de una calle muy vieja,  estrecha y empedrada, que en la actualidad esta destinada unicamente al paso de los peatones. Este es el escenario que algunos de los artistas urbanos ocupan para plasmar su arte en murales o grafitis.
+                </p>
+                <div class="portait">
+                    <img class="tres" src="imagenes/jovenes.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/>
+                    <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span>
+                </div>
+                <p class="contenido-cuepo-1">Sobre esta calle hay diferentes establecimientos que en su mayoría ofrecen una experiencia gastronómica como lo son los bares, cafeterias, restaurantes que allí se encuentran en la zona. En estos lugares se puede desde degustar un buen café hasta pasar una tarde acompañado de amigos y con cervezas y musica rock de fondo. pues allí se ubican espacios con todo tipo de ambientaciones para todo tipo de gustos.</p>
+            </section>
+        </div>
     </div>
+    
+    <div class="contenido-dos" id="contenido-dos" onclick="showActivity2()">
+        <h4>Actividad 2</h4>
+        <div class="hidden">
+            <div class="portait">
+                <img class="tres" src="imagenes/chicha.jpeg" width="500px" heigth="500px" alt="Chicha que se vende en la calle del embudo"/>
+                <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span>
+            </div>
+        <p>La bebida característica y emblemática del Chorro de Quevedo y sus alrededores es la chicha, es un trago de maiz fermentado que existe desde hace más de 9000 años en la región. La ofrecen de sabores y colores diferentes, el precio también varia según el establecimiento, además se puede encontrar en vaso o totuma si se desea vivir la experiencia completa.</p>
+        </div>
+    </div>
+    
+    
+    <div class="contenido-tres" id="contenido-tres" onclick="showActivity3()">
+        <h4>
+            Actividad 3
+        </h4>
+        <div class="hidden">
+            <p class="uno">
+                Otra de las actividades que se llevan a cabo en la zona es la cuentería, actividad que se ha realizado durante años en el centro de la plazoleta.
+            </p>
+            <div class="portait">
+                <!-- asigna el estilo "uno" al párrafo de texto -->
+                <img class="cuatro" src="imagenes/cuenteros.jpg" width="400px" heigth="400px" alt="Cuenteros en la plazoleta Chorro de Quevedo"/>
+                <span class="copyrightb"> &copy; Fotografía de Álvaro Cardona | SOHO.</span>
+            </div>
+            
+            <p class="ocho"> Aquí las anecdotas, cuentos e incluso chistes se toman el escenario, son muchos los cuenteros que narran sus historias con monologos preparados en la Plazoleta, las personas se reunen entorno a ellos y al final de cada presentación se recoge entre todo el público un aporte voluntario pues este es la forma de sustento de estas personas.
+                Son estas y muchas otras actividades como las presentaciones musicales, acrobacias o malabares toman lugar en este espacio, lo que hace a este un punto tan turistico de la ciudad.
+            </p>
+        </div>
+    </div>
+    
+    <div class="contenido-cuatro" id="contenido-cuatro" onclick="showActivity4()">
+        <h4>
+            Actividad 4
+        </h4>
+        <div class="hidden">
+            <img class="tres" src="imagenes/labenditachicheria.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/>
+            <p>
+                Frente a la plaza del chorro de quevedo en la carrera primera con calle 12B bis, se encuentra La Bendita Chicheria, se trata de una tienda que también funciona como museo, en este lugar se encuentra todo tipo de objetos y fotografias que hacen referencia a los aspectos tradicionales de la cultura de Bogotá. Dentro del lugar se lleva a cabo un recorrido que tiene una duración de cuarenta minutos, en el que se habla del origen y la preparación de la chicha.
+                Su fundador, Alfredo Ortiz tenía como objetivo el recuperar y revivir las costumbres ancestrales, por lo que además del recorrido historico se hace un llamado de atención a nustra cultura olvidada.
+            </p>
+        </div>
+    </div>
+</main>
 
 <p class="ocho"><a href="#inicio"> volver al inicio </a></p> <!--para volver a la parte del documento marcada como "inicio"-->
 </body>
