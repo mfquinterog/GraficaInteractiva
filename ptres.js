@@ -57,7 +57,6 @@ function showAnimationBubbles(element) {
     let newB = bubble.cloneNode(true);
     newB.style.left = Math.random() * 100 + "%";
     newB.style.right = Math.random() * 100 + "%";
-    //newB.style.scale = Math.random() * 2 + 1;
     newB.style.setProperty("--animate-duration", `${Math.random() * 2}s`);
     element.appendChild(newB);
   }

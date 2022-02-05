@@ -7,14 +7,14 @@
 <title>Chorro de Quevedo</title> <!--titulo de la pestaña-->
 <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
-<script src="ptres.js"></script>
-<link
+<script src="ptres.js"></script> <!-- llama el archivo ptres.js -->
+<link 
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  /> <!-- llama la libreria animate.css -->
 </head>
 
-<body><a name="indice"></a>
+<body><a name="indice"></a> <!-- a name="indice" es para que cuando se haga click en el enlace #indice se regrese a la parte de arriba de la pagina -->
     <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
     <label class="etiqueta1" for="btn-menu"><img src="imagenes/menu.png" width="30px"></label><!-- la imagen del ícono se muestra como label del icono de menu y se oculta cuando no se necesita -->
     <a href="indice.html" target="_self" id="inicio"><h1>Chorro de Quevedo</h1></a> <!--id "inicio" es un identificador unico del documento-->
@@ -29,25 +29,25 @@
         </nav>  
         <h2 class="title-p-tres">¿Qué se puede hacer?</h2>
          
-<main class="p-tres">
-    <div class="contenido-uno" id="contenido-uno" onclick="showActivity1()" onmouseover="showAnimationBubbles(this)">
-        <div id="flip1">
-            <h4>Actividad 1</h4>
-            <i class="animate__animated buble-animation  animate__slower icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+<main class="p-tres"> <!-- clase main es para definir el contenido principal de la página -->
+    <div class="contenido-uno" id="contenido-uno" onclick="showActivity1()" onmouseover="showAnimationBubbles(this)"> <!-- id "contenido-uno" es un identificador unico del documento -->
+        <div id="flip1"> <!-- id "flip1" es un identificador unico del documento el cual mostrara la carta de actividad 1 -->
+            <h4>Actividad 1</h4> <!-- titulo de la actividad -->
+            <i class="animate__animated buble-animation  animate__slower icon"> <!--Icono con la animación-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16"> <!-- icono de un circulo en vectores -->
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <!-- dibuja un circulo -->
                   </svg>
             </i>
         </div>
         
-        <div class="hidden">
+        <div class="hidden"> <!-- clase hidden es para ocultar el contenido de la actividad 1, este muestra el contenido de la actividad 1 -->
             <p class="uno cabecera">La plaza del chorro de Quevedo ha sido durante años un centro de encuentros para personas de todas las edades, pues es uno de los atractivos urbanos de la ciudad ya que se encuentra en uno de los barrios mas tradicionales de Bogotá.
                 La llamada calle del embudo es una de las vías por las cuales se puede acceder a la plazoleta, se trata de una calle muy vieja,  estrecha y empedrada, que en la actualidad esta destinada unicamente al paso de los peatones. Este es el escenario que algunos de los artistas urbanos ocupan para plasmar su arte en murales o grafitis.
-            </p>
-            <section>
-                <div class="portait">
-                    <img class="tres" src="imagenes/jovenes.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/>
-                    <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span>
+            </p> <!-- contenido de la actividad 1 -->
+            <section> <!-- seccion para mostrar la imagen de la actividad 1 -->
+                <div class="portait"> <!-- clase portait es para definir la imagen de la actividad 1 y su pie de pagina -->
+                    <img class="tres" src="imagenes/jovenes.jpeg" width="440px" heigth="440px" alt="Jovenes en la calle del embudo"/> <!-- imagen de la actividad 1 -->
+                    <span class="copyuno"> &copy; Fotografía de Mauricio León | EL TIEMPO. </span> <!-- pie de pagina de la imagen de la actividad 1 -->
                 </div>
                 <p class="contenido-cuepo-1">Sobre esta calle hay diferentes establecimientos que en su mayoría ofrecen una experiencia gastronómica como lo son los bares, cafeterias, restaurantes que allí se encuentran en la zona. En estos lugares se puede desde degustar un buen café hasta pasar una tarde acompañado de amigos y con cervezas y musica rock de fondo. pues allí se ubican espacios con todo tipo de ambientaciones para todo tipo de gustos.</p>
             </section>

@@ -816,18 +816,17 @@ body {
     minmax(700px, 1fr)
   ); /*Ajuste automatico*/
 }
+/*Estilo para el párrafo de información de cada actividad*/
 .p-tres > div {
   height: 450px;
   color: white;
 }
-.p-tres > div > h4 {
+/* Estilo para los titulos de cada actividad*/
+.p-tres > div > div > h4 {
   font-size: 3em;
   color: white;
   width: 100%;
   text-align: center;
-}
-.p-tres > div:hover {
-  background-color: green;
 }
 /*Estilo para el párrafo de información del contenido 1*/
 .p-tres > .contenido-uno {
@@ -839,15 +838,23 @@ body {
   justify-content: center;
   position: relative;
 }
+/* Estilo perzonalizado para el contenido de la actividad 1 en la página numero tres
+especificamente la imagén junto al cuerpo*/
 .p-tres > .contenido-uno > section {
   display: flex;
 }
+/* Estilo perzonalizado para el contenido de la actividad 1 en la página numero tres
+especificamente la imagén*/
 .p-tres > .contenido-uno > section > .portait {
   width: 50%;
 }
+/* Estilo perzonalizado para el contenido de la actividad 1 en la página numero tres
+especificamente el primer título*/
+
 .p-tres > .contenido-uno > section > .cabecera {
   width: 100%;
 }
+/* Estilo perzonalizado para el contenido de la actividad 1 en la página numero tres*/
 .p-tres > .contenido-uno > section > .contenido-cuepo-1 {
   width: 50%;
 }
@@ -910,43 +917,44 @@ body {
   align-items: center;
   position: relative;
 }
-
+/*Estilo para el párrafo de información del título de cada contendio de la página tres*/
 .title-p-tres {
   text-align: center;
   margin: 8px auto;
   padding: 0;
 }
-
+/* Protrait es la clase para mostrar una imagen junto a su pie de pagina*/
 .portait {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-
+/* Clase para crear una pequeña animación durante los scrols en la página*/
 html {
   scroll-behavior: smooth;
 }
-
+/* Clase de utilidad para ocular elementos en el navegador*/
 .hidden {
   display: none;
 }
-
+/* Estilos de fuente para la propuesa de la página*/
 .prop {
   font-family: Ancizar Sans-regular;
   color: #f5fffa; /*mint creamm*/
   font-size: 24px;
 }
-
+/*Estilo para los iconos en burbuja*/
 i {
   position: absolute;
   top: 0;
+  transform: scale(1.5);
   fill: white;
 }
-
+/* Se crea la clase de la animación de los contenidos*/
 .buble-animation {
   animation: down-to-up 2s linear;
 }
-
+/* Creación de la animación de la imagen del mapa interactivo en forma de burbujas*/
 @keyframes down-to-up {
   0% {
     transform: translate(-20px, 0);
